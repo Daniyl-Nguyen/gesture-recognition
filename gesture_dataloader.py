@@ -81,7 +81,7 @@ def get_dataloader(dataset_path, batch_size=32, shuffle=True, num_workers=0, tra
 
 # Example usage:
 if __name__ == "__main__":
-    dataset_path = r"C:\Users\masly\gesture-tracking\dataset"
+    dataset_path = r"dataset"
     dataloader = get_dataloader(dataset_path, batch_size=16, shuffle=True)
     
     # Iterate over the DataLoader

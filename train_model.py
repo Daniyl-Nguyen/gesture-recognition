@@ -4,7 +4,8 @@ import numpy as np
 from torch.utils.data import DataLoader, Subset
 from gesture_dataloader import GestureDataset  # Assumes your dataset class is defined here
 
-path = r"C:\Users\masly\gesture-tracking\dataset"
+path = r"dataset"
+
 
 class ThreeLayerMLP(nn.Module):
     def __init__(self, input_size=147, hidden1_size=256, hidden2_size=128, num_classes=10):
