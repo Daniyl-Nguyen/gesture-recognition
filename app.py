@@ -2,7 +2,7 @@ from typing import List
 from fastapi import FastAPI
 from pydantic import BaseModel
 from train_model import get_trained_model, ThreeLayerMLP
-from dataset_loader import GestureDataset  # Import your dataset class
+from gesture_dataloader import GestureDataset  # Import your dataset class
 
 app = FastAPI()
 
