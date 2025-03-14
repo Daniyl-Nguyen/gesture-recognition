@@ -2,6 +2,7 @@ from typing import List
 
 import torch
 import torch.nn as nn
+import torch.nn.functional as F
 import numpy as np
 from torch.utils.data import DataLoader, Subset
 from gesture_dataloader import (
@@ -9,7 +10,6 @@ from gesture_dataloader import (
 )  # Assumes your dataset class is defined here
 
 path = r"dataset"
-
 
 class ThreeLayerMLP(nn.Module):
     def __init__(
@@ -28,12 +28,20 @@ class ThreeLayerMLP(nn.Module):
         return x
     
     def predict(self, data: List[int]):
-        # convert data to tensor
+        # Convert data to tensor
         x = torch.tensor(data, dtype=torch.float32).unsqueeze(0)
         x = self.forward(x)
-        # get the index of the highest value and convert it to int
-        classification = int(torch.argmax(x))
-        return classification
+        
+        # Apply softmax to get probabilities
+        probs = F.softmax(x, dim=1)
+        
+        # Get the index of the highest probability
+        classification_idx = torch.argmax(probs).item()
+        
+        # Get the confidence score
+        confidence = probs[0, classification_idx].item()
+
+        return classification_idx, confidence
 
 
 def train_model(model, train_loader, test_loader, criterion, optimizer, num_epochs=100):
