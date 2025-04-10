@@ -1,5 +1,6 @@
 from typing import List
 
+import os
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -123,6 +124,58 @@ def create_train_test_loaders(dataset, batch_size=32, test_samples_per_class=2):
     return train_loader, test_loader
 
 
+import os
+
+def get_trained_models():
+    """
+    Trains or loads pre-trained models for left and right hand gestures.
+    """
+    batch_size = 32
+    num_epochs = 50
+    criterion = nn.CrossEntropyLoss()
+
+    model_left_path = "models/model_left.pth"
+    model_right_path = "models/model_right.pth"
+
+    # Create model directory if not exists
+    os.makedirs("models", exist_ok=True)
+
+    # --- Left Hand ---
+    model_left = ThreeLayerMLP()
+    if os.path.exists(model_left_path):
+        print("Loading pre-trained left hand model...")
+        model_left.load_state_dict(torch.load(model_left_path))
+    else:
+        print("Training model for left hand gestures...")
+        left_hand_dataset = GestureDataset(path, hand="left")
+        train_loader_left, test_loader_left = create_train_test_loaders(
+            left_hand_dataset, batch_size=batch_size, test_samples_per_class=5
+        )
+        optimizer_left = torch.optim.Adam(model_left.parameters(), lr=0.01)
+        train_model(model_left, train_loader_left, test_loader_left, criterion, optimizer_left, num_epochs=num_epochs)
+        torch.save(model_left.state_dict(), model_left_path)
+        print("Left hand model trained and saved.")
+
+    # --- Right Hand ---
+    model_right = ThreeLayerMLP()
+    if os.path.exists(model_right_path):
+        print("Loading pre-trained right hand model...")
+        model_right.load_state_dict(torch.load(model_right_path))
+    else:
+        print("Training model for right hand gestures...")
+        right_hand_dataset = GestureDataset(path, hand="right")
+        train_loader_right, test_loader_right = create_train_test_loaders(
+            right_hand_dataset, batch_size=batch_size, test_samples_per_class=5
+        )
+        optimizer_right = torch.optim.Adam(model_right.parameters(), lr=0.01)
+        train_model(model_right, train_loader_right, test_loader_right, criterion, optimizer_right, num_epochs=num_epochs)
+        torch.save(model_right.state_dict(), model_right_path)
+        print("Right hand model trained and saved.")
+
+    return model_left, model_right
+
+
+
 def main():
     batch_size = 32
     num_epochs = 50
@@ -148,28 +201,6 @@ def main():
 
     print("Final test performance:")
     test_model(model, test_loader)
-
-
-def get_trained_model():
-    batch_size = 32
-    num_epochs = 50
-    criterion = nn.CrossEntropyLoss()
-
-    dataset = GestureDataset(path)
-    train_loader, test_loader = create_train_test_loaders(
-        dataset, batch_size=batch_size, test_samples_per_class=9
-    )
-    model = ThreeLayerMLP()
-    optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
-
-    train_model(
-        model, train_loader, test_loader, criterion, optimizer, num_epochs=num_epochs
-    )
-
-    print("Final test performance:")
-    test_model(model, test_loader)
-
-    return model
 
 
 if __name__ == "__main__":
