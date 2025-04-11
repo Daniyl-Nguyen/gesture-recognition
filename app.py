@@ -112,7 +112,6 @@ async def classify_data(request: FlatCombinedDataRequest):
     else:
          results["right_hand"] = {"error": "Right hand model or mapping not loaded"}
 
-
     return results
 
 # --- Optional: Add main execution block for running with uvicorn ---

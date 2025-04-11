@@ -1,6 +1,7 @@
 import os
 import pandas as pd
 import requests
+import time
 
 # Define the Participants dataset path and API endpoint
 PARTICIPANTS_DATA_PATH = "c:\\Users\\daniy\\gesture-recognition\\Participants"
@@ -9,6 +10,17 @@ API_ENDPOINT = "http://127.0.0.1:8000/classify_data"
 # Define constants
 FLOATS_PER_HAND = 147  # 21 joints * 7 floats (posXYZ, rotXYZW)
 EXPECTED_DATA_LENGTH = FLOATS_PER_HAND  # Updated to expect data for a single hand
+
+def check_models_loaded():
+    """
+    Basic check if server is responding
+    """
+    try:
+        test_data = [0] * FLOATS_PER_HAND * 2  # Data for both hands
+        requests.post(API_ENDPOINT, json={"data": test_data})
+        return True
+    except:
+        return False
 
 def process_csv_file(file_path):
     """
@@ -36,6 +48,12 @@ def evaluate_participants():
     """
     Evaluate the data within the Participants directory by sending it to the classify endpoint.
     """
+    # First check if models are loaded
+    if not check_models_loaded():
+        print("Error: Hand models are not loaded. Please start the server with proper model loading.")
+        print("Hint: Check the API server logs for model loading errors.")
+        return
+        
     results = []
 
     # Walk through the Participants dataset directory
@@ -74,34 +92,56 @@ def evaluate_participants():
                     if data is None:
                         continue
 
-                    # Pad the data with zeros for the other hand
-                    if hand == "Left":
-                        data = data + [0] * FLOATS_PER_HAND  # Pad for the right hand
-                    elif hand == "Right":
-                        data = [0] * FLOATS_PER_HAND + data  # Pad for the left hand
-
+                    # Properly format data for the API (which expects both hands)
+                    # Instead of padding with zeros, duplicate the hand data
+                    formatted_data = data + data  # Duplicate the hand data to fill both hand slots
+                    
                     # Send data to the classify endpoint
                     try:
-                        response = requests.post(API_ENDPOINT, json={"data": data})
+                        response = requests.post(API_ENDPOINT, json={"data": formatted_data})
                         if response.status_code == 200:
                             result = response.json()
-                            result.update({
-                                "participant": participant_name,
-                                "gesture": gesture,
-                                "hand": hand,  # Updated to use "Left" or "Right"
-                                "file": file_name
-                            })
-                            results.append(result)
-                            print(f"Processed {file_name}: {result}")
+                            # Only consider the result for the current hand
+                            hand_result = result.get('left_hand' if hand == 'Left' else 'right_hand', {})
+                            
+                            # Create a cleaner result dictionary with better column names
+                            clean_result = {
+                                "Participant": participant_name,
+                                "Hand": hand,
+                                "Expected Gesture": gesture,
+                                "Predicted Gesture": hand_result.get("classification", "Unknown"),
+                                "Confidence": hand_result.get("confidence", 0.0),
+                                "File": file_name,
+                                # Store if prediction was correct
+                                "Correct": hand_result.get("classification", "Unknown") == gesture
+                            }
+                            
+                            results.append(clean_result)
+                            print(f"Processed {file_name}: Expected '{gesture}', Predicted '{clean_result['Predicted Gesture']}' with {clean_result['Confidence']:.2f} confidence")
                         else:
                             print(f"Error: Received status code {response.status_code} for {file_name}")
                     except Exception as e:
                         print(f"Error sending data for {file_name}: {e}")
 
-    # Save results to a CSV file
+    # Save results to a CSV file with clear column names
     results_df = pd.DataFrame(results)
+    
+    # Calculate summary statistics
+    if not results_df.empty:
+        accuracy = results_df["Correct"].mean() * 100
+        print(f"\nOverall accuracy: {accuracy:.2f}%")
+        
+        # Group by participant and calculate per-participant accuracy
+        participant_stats = results_df.groupby("Participant")["Correct"].agg(['mean', 'count'])
+        participant_stats['accuracy'] = participant_stats['mean'] * 100
+        
+        print("\nPer-participant accuracy:")
+        for participant, row in participant_stats.iterrows():
+            print(f"{participant}: {row['accuracy']:.2f}% ({int(row['count'] * row['mean'])}/{int(row['count'])} correct)")
+    
+    # Save the results
     results_df.to_csv("evaluation_results.csv", index=False)
-    print("Evaluation completed. Results saved to 'evaluation_results.csv'.")
+    print("\nEvaluation completed. Results saved to 'evaluation_results.csv'.")
 
 if __name__ == "__main__":
     evaluate_participants()

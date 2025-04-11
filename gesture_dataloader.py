@@ -34,12 +34,13 @@ def get_dataset_from_path(dataset_path):
 
 # Custom Dataset class for gesture data.
 class GestureDataset(Dataset):
-    def __init__(self, dataset_path, transform=None):
+    def __init__(self, dataset_path, hand=None, transform=None):
         """
         Loads the gesture dataset from a given path and maps gesture names to integer labels.
         
         Args:
             dataset_path (str): Path to the dataset directory.
+            hand (str, optional): Filter data for specific hand ('left', 'right'). Case-insensitive.
             transform (callable, optional): Optional transform to be applied on a sample.
         """
         self.data = []
@@ -49,9 +50,17 @@ class GestureDataset(Dataset):
         # Create a mapping from gesture names to integer indices.
         self.gesture_to_idx = {gesture: idx for idx, gesture in enumerate(sorted(raw_dataset.keys()))}
         
+        # Normalize hand parameter for case-insensitive comparison
+        if hand is not None:
+            hand = hand.capitalize()  # Now it will be 'Left' or 'Right'
+        
         # Flatten the nested dictionary into two parallel lists: one for data and one for labels.
         for gesture_name, hand_dict in raw_dataset.items():
-            for hand, gesture_list in hand_dict.items():
+            for gesture_hand, gesture_list in hand_dict.items():
+                # Skip if hand filter is active and doesn't match current hand
+                if hand is not None and gesture_hand != hand:
+                    continue
+                    
                 for gesture_data in gesture_list:
                     self.data.append(gesture_data)
                     self.labels.append(self.gesture_to_idx[gesture_name])
