@@ -343,13 +343,6 @@ def viz_static_hand(coordinates, output_path=None, show=True):
             zs = [coordinates[start_idx, 2], coordinates[end_idx, 2]]
             ax.plot(xs, ys, zs, 'r-', linewidth=2)
     
-    # Add joint labels
-    for i, joint_name in [(v, k) for k, v in JOINT_MAPPING.items()]:
-        if i < len(coordinates):
-            ax.text(coordinates[i, 0], coordinates[i, 1], coordinates[i, 2], 
-                   joint_name.replace('Left_', '').replace('Right_', ''), 
-                   size=8, color='black', alpha=0.7)
-    
     # Set a good viewpoint
     ax.view_init(elev=30, azim=45)
     
