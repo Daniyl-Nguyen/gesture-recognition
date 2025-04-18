@@ -94,6 +94,8 @@ def evaluate_participants_with_threshold(left_hand_model, right_hand_model, conf
             # Extract gesture name from the folder name
             try:
                 _, gesture = gesture_folder.split("-", 1)
+                if gesture == "Unknown":
+                    gesture = "Unknown Gesture"
             except ValueError:
                 print(f"Skipping folder {gesture_folder}: Unable to extract gesture name.")
                 continue
@@ -147,7 +149,7 @@ def evaluate_all_thresholds():
     left_hand_model, right_hand_model = get_trained_models()
     
     # Thresholds from 0.0 to 0.9, incrementing by 0.01
-    thresholds = np.arange(0.0, 0.90, 0.01)
+    thresholds = np.arange(0.0, 1.01, 0.01)
     all_results = []
     threshold_accuracies = []
     

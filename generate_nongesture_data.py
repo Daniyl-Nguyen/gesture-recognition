@@ -2,6 +2,13 @@ import csv
 import random
 import os
 
+# --- Configuration ---
+PARTICIPANTS = ["Finch", "Mostafa", "Pouya", "Mykola"]
+SAMPLES_PER_PARTICIPANT_HAND = 50 # Number of files to generate per hand for each participant
+BASE_OUTPUT_DIR = r"c:\Users\daniy\gesture-recognition\Participants" # Changed base directory
+# --- End Configuration ---
+
+
 # Define standard joint names based on the example format
 LEFT_JOINT_NAMES = [
     "Wrist", "Left_IndexProximal", "Left_IndexIntermediate", "Left_IndexDistal", "Left_IndexDistalEnd",
@@ -15,15 +22,21 @@ LEFT_JOINT_NAMES = [
 RIGHT_JOINT_NAMES = [name.replace("Left_", "Right_") if name != "Wrist" else name for name in LEFT_JOINT_NAMES]
 
 
-def generate_nongesture_csv(output_dir, hand_type, file_number, min_frames=50, max_frames=150):
-    """Generates a single CSV file with random hand landmark data based on the new format."""
+def generate_nongesture_csv(base_output_dir, participant_name, hand_type, file_number):
+    """Generates a single CSV file with random hand landmark data for a specific participant."""
 
     if hand_type not in ["Left", "Right"]:
         raise ValueError("hand_type must be 'Left' or 'Right'")
 
+    # Define gesture folder name
+    gesture_folder_name = f"{participant_name}-Unknown" # Use "Unknown"
+
+    # Construct the full output directory path
+    output_dir = os.path.join(base_output_dir, participant_name, gesture_folder_name, hand_type)
+    os.makedirs(output_dir, exist_ok=True) # Ensure the directory exists
+
     joint_names = LEFT_JOINT_NAMES if hand_type == "Left" else RIGHT_JOINT_NAMES
-    num_frames = random.randint(min_frames, max_frames)
-    file_name = f"Unknown_{hand_type}_{file_number}.csv"
+    file_name = f"{participant_name}-Unknown_{hand_type}_{file_number}.csv" # Updated filename format
     output_path = os.path.join(output_dir, file_name)
 
     # Define headers based on the example CSV
@@ -51,21 +64,16 @@ def generate_nongesture_csv(output_dir, hand_type, file_number, min_frames=50, m
 
     print(f"Generated: {output_path}")
 
-# --- How to use it ---
+# --- Main Execution Logic ---
 
-# Create base directories if they don't exist
-base_dir = r"c:\Users\daniy\gesture-recognition\Unknown"
-left_dir = os.path.join(base_dir, "Left")
-right_dir = os.path.join(base_dir, "Right")
-os.makedirs(left_dir, exist_ok=True)
-os.makedirs(right_dir, exist_ok=True)
+print(f"Starting generation of 'Unknown Gesture' data for {len(PARTICIPANTS)} participants...")
+print(f"Generating {SAMPLES_PER_PARTICIPANT_HAND} samples per hand for each participant.")
 
-# Generate 10 files for Left hand
-for i in range(1, 11):
-    generate_nongesture_csv(left_dir, "Left", i)
+for participant in PARTICIPANTS:
+    print(f"\nProcessing participant: {participant}")
+    for hand in ["Left", "Right"]:
+        print(f"  Generating for {hand} hand...")
+        for i in range(1, SAMPLES_PER_PARTICIPANT_HAND + 1):
+            generate_nongesture_csv(BASE_OUTPUT_DIR, participant, hand, i)
 
-# Generate 10 files for Right hand
-for i in range(1, 11):
-    generate_nongesture_csv(right_dir, "Right", i)
-
-print("Finished generating Unknown data.")
+print("\nFinished generating Unknown Gesture data.")
