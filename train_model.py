@@ -5,7 +5,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
-from torch.utils.data import DataLoader, Subset
+from torch.utils.data import DataLoader, Subset, ConcatDataset
 from gesture_dataloader import (
     GestureDataset,
 )  # Assumes your dataset class is defined here
@@ -128,8 +128,11 @@ import os
 
 def get_trained_models():
     """
-    Trains or loads pre-trained models for left and right hand gestures.
+    Trains or loads pre-trained models for left and right hand gestures,
+    incorporating data from two dataset paths if training is needed.
     """
+    path1 = r"dataset"
+    path2 = r"dataset2" # Define the second dataset path
     batch_size = 32
     num_epochs = 50
     criterion = nn.CrossEntropyLoss()
@@ -146,10 +149,15 @@ def get_trained_models():
         print("Loading pre-trained left hand model...")
         model_left.load_state_dict(torch.load(model_left_path))
     else:
-        print("Training model for left hand gestures...")
-        left_hand_dataset = GestureDataset(path, hand="left")
+        print("Training model for left hand gestures using data from:", path1, "and", path2)
+        # Create datasets for both paths
+        left_hand_dataset1 = GestureDataset(path1, hand="left")
+        left_hand_dataset2 = GestureDataset(path2, hand="left")
+        # Combine datasets
+        combined_left_dataset = ConcatDataset([left_hand_dataset1, left_hand_dataset2])
+
         train_loader_left, test_loader_left = create_train_test_loaders(
-            left_hand_dataset, batch_size=batch_size, test_samples_per_class=5
+            combined_left_dataset, batch_size=batch_size, test_samples_per_class=5
         )
         optimizer_left = torch.optim.Adam(model_left.parameters(), lr=0.01)
         train_model(model_left, train_loader_left, test_loader_left, criterion, optimizer_left, num_epochs=num_epochs)
@@ -162,10 +170,15 @@ def get_trained_models():
         print("Loading pre-trained right hand model...")
         model_right.load_state_dict(torch.load(model_right_path))
     else:
-        print("Training model for right hand gestures...")
-        right_hand_dataset = GestureDataset(path, hand="right")
+        print("Training model for right hand gestures using data from:", path1, "and", path2)
+        # Create datasets for both paths
+        right_hand_dataset1 = GestureDataset(path1, hand="right")
+        right_hand_dataset2 = GestureDataset(path2, hand="right")
+        # Combine datasets
+        combined_right_dataset = ConcatDataset([right_hand_dataset1, right_hand_dataset2])
+
         train_loader_right, test_loader_right = create_train_test_loaders(
-            right_hand_dataset, batch_size=batch_size, test_samples_per_class=5
+            combined_right_dataset, batch_size=batch_size, test_samples_per_class=5
         )
         optimizer_right = torch.optim.Adam(model_right.parameters(), lr=0.01)
         train_model(model_right, train_loader_right, test_loader_right, criterion, optimizer_right, num_epochs=num_epochs)
