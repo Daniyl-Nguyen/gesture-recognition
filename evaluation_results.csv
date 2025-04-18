@@ -80,26 +80,106 @@ Finch,Right,Thank-You,Thank-You,0.9999821186065674,Finch-Thank-You_Right_2025-04
 Finch,Right,Thank-You,Thank-You,0.9999421834945679,Finch-Thank-You_Right_2025-04-04_13-27-05.csv,True
 Finch,Right,Thank-You,Thank-You,0.9999253749847412,Finch-Thank-You_Right_2025-04-04_13-27-06.csv,True
 Finch,Right,Thank-You,Thank-You,0.9999691247940063,Finch-Thank-You_Right_2025-04-04_13-27-07.csv,True
-Finch,Left,Unknown Gesture,Start-Talking,0.9885147213935852,Unknown_Left_1.csv,False
-Finch,Left,Unknown Gesture,Start-Talking,0.9687531590461731,Unknown_Left_10.csv,False
-Finch,Left,Unknown Gesture,Stop-Talking,0.8524152040481567,Unknown_Left_2.csv,False
-Finch,Left,Unknown Gesture,Hello,0.9765449166297913,Unknown_Left_3.csv,False
-Finch,Left,Unknown Gesture,Unknown Gesture,0.42457661032676697,Unknown_Left_4.csv,True
-Finch,Left,Unknown Gesture,Unknown Gesture,0.6255381107330322,Unknown_Left_5.csv,True
-Finch,Left,Unknown Gesture,Unknown Gesture,0.4959008991718292,Unknown_Left_6.csv,True
-Finch,Left,Unknown Gesture,Start-Talking,0.8134064078330994,Unknown_Left_7.csv,False
-Finch,Left,Unknown Gesture,Start-Talking,0.7324371933937073,Unknown_Left_8.csv,False
-Finch,Left,Unknown Gesture,Start-Talking,0.8328030705451965,Unknown_Left_9.csv,False
-Finch,Right,Unknown Gesture,Hello,0.9999997615814209,Unknown_Right_1.csv,False
-Finch,Right,Unknown Gesture,Hello,0.9999955892562866,Unknown_Right_10.csv,False
-Finch,Right,Unknown Gesture,Hello,1.0,Unknown_Right_2.csv,False
-Finch,Right,Unknown Gesture,Hello,0.9999986886978149,Unknown_Right_3.csv,False
-Finch,Right,Unknown Gesture,Hello,0.9999985694885254,Unknown_Right_4.csv,False
-Finch,Right,Unknown Gesture,Hello,0.9999997615814209,Unknown_Right_5.csv,False
-Finch,Right,Unknown Gesture,Hello,0.9999997615814209,Unknown_Right_6.csv,False
-Finch,Right,Unknown Gesture,Hello,0.9999997615814209,Unknown_Right_7.csv,False
-Finch,Right,Unknown Gesture,Hello,1.0,Unknown_Right_8.csv,False
-Finch,Right,Unknown Gesture,Hello,0.9999995231628418,Unknown_Right_9.csv,False
+Finch,Left,Unknown Gesture,Hello,0.9113160967826843,Finch-Unknown_Left_1.csv,False
+Finch,Left,Unknown Gesture,Unknown Gesture,0.6351836919784546,Finch-Unknown_Left_10.csv,True
+Finch,Left,Unknown Gesture,Start-Talking,0.9758813977241516,Finch-Unknown_Left_11.csv,False
+Finch,Left,Unknown Gesture,Unknown Gesture,0.29508131742477417,Finch-Unknown_Left_12.csv,True
+Finch,Left,Unknown Gesture,Start-Talking,0.9800868034362793,Finch-Unknown_Left_13.csv,False
+Finch,Left,Unknown Gesture,Hello,0.9954380393028259,Finch-Unknown_Left_14.csv,False
+Finch,Left,Unknown Gesture,Start-Talking,0.9467055201530457,Finch-Unknown_Left_15.csv,False
+Finch,Left,Unknown Gesture,Start-Talking,0.9223772883415222,Finch-Unknown_Left_16.csv,False
+Finch,Left,Unknown Gesture,Unknown Gesture,0.5022735595703125,Finch-Unknown_Left_17.csv,True
+Finch,Left,Unknown Gesture,Unknown Gesture,0.6944969892501831,Finch-Unknown_Left_18.csv,True
+Finch,Left,Unknown Gesture,Start-Talking,0.7365827560424805,Finch-Unknown_Left_19.csv,False
+Finch,Left,Unknown Gesture,Start-Talking,0.8742446303367615,Finch-Unknown_Left_2.csv,False
+Finch,Left,Unknown Gesture,Start-Talking,0.9796920418739319,Finch-Unknown_Left_20.csv,False
+Finch,Left,Unknown Gesture,Hello,0.8239336609840393,Finch-Unknown_Left_21.csv,False
+Finch,Left,Unknown Gesture,Start-Talking,0.9375578165054321,Finch-Unknown_Left_22.csv,False
+Finch,Left,Unknown Gesture,Start-Talking,0.7957614064216614,Finch-Unknown_Left_23.csv,False
+Finch,Left,Unknown Gesture,Start-Talking,0.9936770796775818,Finch-Unknown_Left_24.csv,False
+Finch,Left,Unknown Gesture,Start-Talking,0.8939490914344788,Finch-Unknown_Left_25.csv,False
+Finch,Left,Unknown Gesture,Start-Talking,0.9172500967979431,Finch-Unknown_Left_26.csv,False
+Finch,Left,Unknown Gesture,Start-Talking,0.9443873167037964,Finch-Unknown_Left_27.csv,False
+Finch,Left,Unknown Gesture,Start-Talking,0.9997946619987488,Finch-Unknown_Left_28.csv,False
+Finch,Left,Unknown Gesture,Start-Talking,0.9801835417747498,Finch-Unknown_Left_29.csv,False
+Finch,Left,Unknown Gesture,Stop-Talking,0.9008988738059998,Finch-Unknown_Left_3.csv,False
+Finch,Left,Unknown Gesture,Hello,0.9999946355819702,Finch-Unknown_Left_30.csv,False
+Finch,Left,Unknown Gesture,Hello,0.9990783929824829,Finch-Unknown_Left_31.csv,False
+Finch,Left,Unknown Gesture,Unknown Gesture,0.4814720153808594,Finch-Unknown_Left_32.csv,True
+Finch,Left,Unknown Gesture,Start-Talking,0.9617170691490173,Finch-Unknown_Left_33.csv,False
+Finch,Left,Unknown Gesture,Hello,0.9115662574768066,Finch-Unknown_Left_34.csv,False
+Finch,Left,Unknown Gesture,Start-Talking,0.9452705979347229,Finch-Unknown_Left_35.csv,False
+Finch,Left,Unknown Gesture,Start-Talking,0.9812577962875366,Finch-Unknown_Left_36.csv,False
+Finch,Left,Unknown Gesture,Start-Talking,0.9971243739128113,Finch-Unknown_Left_37.csv,False
+Finch,Left,Unknown Gesture,Unknown Gesture,0.6664630174636841,Finch-Unknown_Left_38.csv,True
+Finch,Left,Unknown Gesture,Start-Talking,0.9950410723686218,Finch-Unknown_Left_39.csv,False
+Finch,Left,Unknown Gesture,Stop-Talking,0.8001915216445923,Finch-Unknown_Left_4.csv,False
+Finch,Left,Unknown Gesture,Start-Talking,0.967125415802002,Finch-Unknown_Left_40.csv,False
+Finch,Left,Unknown Gesture,Start-Talking,0.992216944694519,Finch-Unknown_Left_41.csv,False
+Finch,Left,Unknown Gesture,Start-Talking,0.9826305508613586,Finch-Unknown_Left_42.csv,False
+Finch,Left,Unknown Gesture,Start-Talking,0.9925128221511841,Finch-Unknown_Left_43.csv,False
+Finch,Left,Unknown Gesture,Start-Talking,0.92952960729599,Finch-Unknown_Left_44.csv,False
+Finch,Left,Unknown Gesture,Hello,0.9743513464927673,Finch-Unknown_Left_45.csv,False
+Finch,Left,Unknown Gesture,Start-Talking,0.9714151620864868,Finch-Unknown_Left_46.csv,False
+Finch,Left,Unknown Gesture,Unknown Gesture,0.6625739932060242,Finch-Unknown_Left_47.csv,True
+Finch,Left,Unknown Gesture,Unknown Gesture,0.4214721918106079,Finch-Unknown_Left_48.csv,True
+Finch,Left,Unknown Gesture,Unknown Gesture,0.5608329772949219,Finch-Unknown_Left_49.csv,True
+Finch,Left,Unknown Gesture,Start-Talking,0.9962422847747803,Finch-Unknown_Left_5.csv,False
+Finch,Left,Unknown Gesture,Start-Talking,0.9971494078636169,Finch-Unknown_Left_50.csv,False
+Finch,Left,Unknown Gesture,Unknown Gesture,0.6346315741539001,Finch-Unknown_Left_6.csv,True
+Finch,Left,Unknown Gesture,Start-Talking,0.9701879620552063,Finch-Unknown_Left_7.csv,False
+Finch,Left,Unknown Gesture,Hello,0.8607079982757568,Finch-Unknown_Left_8.csv,False
+Finch,Left,Unknown Gesture,Hello,0.9823554158210754,Finch-Unknown_Left_9.csv,False
+Finch,Right,Unknown Gesture,Hello,1.0,Finch-Unknown_Right_1.csv,False
+Finch,Right,Unknown Gesture,Unknown Gesture,0.5661858320236206,Finch-Unknown_Right_10.csv,True
+Finch,Right,Unknown Gesture,Hello,1.0,Finch-Unknown_Right_11.csv,False
+Finch,Right,Unknown Gesture,Hello,0.9991563558578491,Finch-Unknown_Right_12.csv,False
+Finch,Right,Unknown Gesture,Hello,1.0,Finch-Unknown_Right_13.csv,False
+Finch,Right,Unknown Gesture,Hello,0.9999396800994873,Finch-Unknown_Right_14.csv,False
+Finch,Right,Unknown Gesture,Hello,1.0,Finch-Unknown_Right_15.csv,False
+Finch,Right,Unknown Gesture,Hello,0.9999985694885254,Finch-Unknown_Right_16.csv,False
+Finch,Right,Unknown Gesture,Hello,0.9999991655349731,Finch-Unknown_Right_17.csv,False
+Finch,Right,Unknown Gesture,Hello,0.9999878406524658,Finch-Unknown_Right_18.csv,False
+Finch,Right,Unknown Gesture,Hello,0.9999992847442627,Finch-Unknown_Right_19.csv,False
+Finch,Right,Unknown Gesture,Hello,0.9999984502792358,Finch-Unknown_Right_2.csv,False
+Finch,Right,Unknown Gesture,Hello,0.9996923208236694,Finch-Unknown_Right_20.csv,False
+Finch,Right,Unknown Gesture,Hello,0.9999990463256836,Finch-Unknown_Right_21.csv,False
+Finch,Right,Unknown Gesture,Hello,0.9998981952667236,Finch-Unknown_Right_22.csv,False
+Finch,Right,Unknown Gesture,Hello,0.9999949932098389,Finch-Unknown_Right_23.csv,False
+Finch,Right,Unknown Gesture,Hello,0.9999926090240479,Finch-Unknown_Right_24.csv,False
+Finch,Right,Unknown Gesture,Hello,0.9999978542327881,Finch-Unknown_Right_25.csv,False
+Finch,Right,Unknown Gesture,Hello,0.9999536275863647,Finch-Unknown_Right_26.csv,False
+Finch,Right,Unknown Gesture,Hello,1.0,Finch-Unknown_Right_27.csv,False
+Finch,Right,Unknown Gesture,Hello,0.9999690055847168,Finch-Unknown_Right_28.csv,False
+Finch,Right,Unknown Gesture,Hello,1.0,Finch-Unknown_Right_29.csv,False
+Finch,Right,Unknown Gesture,Hello,1.0,Finch-Unknown_Right_3.csv,False
+Finch,Right,Unknown Gesture,Hello,0.9999685287475586,Finch-Unknown_Right_30.csv,False
+Finch,Right,Unknown Gesture,Hello,0.8690534830093384,Finch-Unknown_Right_31.csv,False
+Finch,Right,Unknown Gesture,Hello,0.9999831914901733,Finch-Unknown_Right_32.csv,False
+Finch,Right,Unknown Gesture,Hello,0.8913590908050537,Finch-Unknown_Right_33.csv,False
+Finch,Right,Unknown Gesture,Hello,1.0,Finch-Unknown_Right_34.csv,False
+Finch,Right,Unknown Gesture,Hello,0.9999781847000122,Finch-Unknown_Right_35.csv,False
+Finch,Right,Unknown Gesture,Hello,0.9999998807907104,Finch-Unknown_Right_36.csv,False
+Finch,Right,Unknown Gesture,Hello,0.9999991655349731,Finch-Unknown_Right_37.csv,False
+Finch,Right,Unknown Gesture,Hello,0.9999843835830688,Finch-Unknown_Right_38.csv,False
+Finch,Right,Unknown Gesture,Hello,0.9999974966049194,Finch-Unknown_Right_39.csv,False
+Finch,Right,Unknown Gesture,Hello,1.0,Finch-Unknown_Right_4.csv,False
+Finch,Right,Unknown Gesture,Hello,1.0,Finch-Unknown_Right_40.csv,False
+Finch,Right,Unknown Gesture,Hello,0.9999958276748657,Finch-Unknown_Right_41.csv,False
+Finch,Right,Unknown Gesture,Hello,0.974869430065155,Finch-Unknown_Right_42.csv,False
+Finch,Right,Unknown Gesture,Hello,0.999995231628418,Finch-Unknown_Right_43.csv,False
+Finch,Right,Unknown Gesture,Hello,0.9995254278182983,Finch-Unknown_Right_44.csv,False
+Finch,Right,Unknown Gesture,Hello,0.9999998807907104,Finch-Unknown_Right_45.csv,False
+Finch,Right,Unknown Gesture,Hello,1.0,Finch-Unknown_Right_46.csv,False
+Finch,Right,Unknown Gesture,Hello,1.0,Finch-Unknown_Right_47.csv,False
+Finch,Right,Unknown Gesture,Hello,0.9994309544563293,Finch-Unknown_Right_48.csv,False
+Finch,Right,Unknown Gesture,Hello,0.9980432987213135,Finch-Unknown_Right_49.csv,False
+Finch,Right,Unknown Gesture,Hello,1.0,Finch-Unknown_Right_5.csv,False
+Finch,Right,Unknown Gesture,Hello,0.999975323677063,Finch-Unknown_Right_50.csv,False
+Finch,Right,Unknown Gesture,Hello,1.0,Finch-Unknown_Right_6.csv,False
+Finch,Right,Unknown Gesture,Hello,0.9999940395355225,Finch-Unknown_Right_7.csv,False
+Finch,Right,Unknown Gesture,Hello,0.9999997615814209,Finch-Unknown_Right_8.csv,False
+Finch,Right,Unknown Gesture,Hello,0.9999885559082031,Finch-Unknown_Right_9.csv,False
 Finch,Left,Yes,Yes,0.9996548891067505,Finch-Yes_Left_2025-04-04_13-23-07.csv,True
 Finch,Left,Yes,Yes,0.9998799562454224,Finch-Yes_Left_2025-04-04_13-23-08.csv,True
 Finch,Left,Yes,Yes,0.9999009370803833,Finch-Yes_Left_2025-04-04_13-23-09.csv,True
@@ -172,26 +252,106 @@ Mostafa,Right,Thank-You,Thank-You,0.9999964237213135,Mostafa-Thank-You_Right_202
 Mostafa,Right,Thank-You,Thank-You,0.9999974966049194,Mostafa-Thank-You_Right_2025-04-04_13-03-30.csv,True
 Mostafa,Right,Thank-You,Thank-You,0.9999980926513672,Mostafa-Thank-You_Right_2025-04-04_13-03-31.csv,True
 Mostafa,Right,Thank-You,Thank-You,0.9999980926513672,Mostafa-Thank-You_Right_2025-04-04_13-03-32.csv,True
-Mostafa,Left,Unknown Gesture,Unknown Gesture,0.38529425859451294,Unknown_Left_1.csv,True
-Mostafa,Left,Unknown Gesture,Start-Talking,0.7261354923248291,Unknown_Left_10.csv,False
-Mostafa,Left,Unknown Gesture,Start-Talking,0.7181371450424194,Unknown_Left_2.csv,False
-Mostafa,Left,Unknown Gesture,Hello,0.999847412109375,Unknown_Left_3.csv,False
-Mostafa,Left,Unknown Gesture,Stop-Talking,0.8624323010444641,Unknown_Left_4.csv,False
-Mostafa,Left,Unknown Gesture,Unknown Gesture,0.4781719744205475,Unknown_Left_5.csv,True
-Mostafa,Left,Unknown Gesture,Hello,0.943553626537323,Unknown_Left_6.csv,False
-Mostafa,Left,Unknown Gesture,Unknown Gesture,0.41483837366104126,Unknown_Left_7.csv,True
-Mostafa,Left,Unknown Gesture,Unknown Gesture,0.6258730292320251,Unknown_Left_8.csv,True
-Mostafa,Left,Unknown Gesture,Unknown Gesture,0.5653510689735413,Unknown_Left_9.csv,True
-Mostafa,Right,Unknown Gesture,Hello,0.9992730021476746,Unknown_Right_1.csv,False
-Mostafa,Right,Unknown Gesture,Hello,0.9999998807907104,Unknown_Right_10.csv,False
-Mostafa,Right,Unknown Gesture,Hello,0.9999995231628418,Unknown_Right_2.csv,False
-Mostafa,Right,Unknown Gesture,Hello,0.9999983310699463,Unknown_Right_3.csv,False
-Mostafa,Right,Unknown Gesture,Hello,0.9987093210220337,Unknown_Right_4.csv,False
-Mostafa,Right,Unknown Gesture,Hello,0.9987974166870117,Unknown_Right_5.csv,False
-Mostafa,Right,Unknown Gesture,How-Are-You,0.8928043842315674,Unknown_Right_6.csv,False
-Mostafa,Right,Unknown Gesture,Hello,0.9999892711639404,Unknown_Right_7.csv,False
-Mostafa,Right,Unknown Gesture,Hello,0.999809205532074,Unknown_Right_8.csv,False
-Mostafa,Right,Unknown Gesture,How-Are-You,0.7783575057983398,Unknown_Right_9.csv,False
+Mostafa,Left,Unknown Gesture,Unknown Gesture,0.6950569152832031,Mostafa-Unknown_Left_1.csv,True
+Mostafa,Left,Unknown Gesture,Hello,0.999189555644989,Mostafa-Unknown_Left_10.csv,False
+Mostafa,Left,Unknown Gesture,Start-Talking,0.9666962027549744,Mostafa-Unknown_Left_11.csv,False
+Mostafa,Left,Unknown Gesture,Unknown Gesture,0.5420176982879639,Mostafa-Unknown_Left_12.csv,True
+Mostafa,Left,Unknown Gesture,Start-Talking,0.944513201713562,Mostafa-Unknown_Left_13.csv,False
+Mostafa,Left,Unknown Gesture,Start-Talking,0.9953623414039612,Mostafa-Unknown_Left_14.csv,False
+Mostafa,Left,Unknown Gesture,Start-Talking,0.9788720011711121,Mostafa-Unknown_Left_15.csv,False
+Mostafa,Left,Unknown Gesture,Unknown Gesture,0.5436625480651855,Mostafa-Unknown_Left_16.csv,True
+Mostafa,Left,Unknown Gesture,Unknown Gesture,0.4353259801864624,Mostafa-Unknown_Left_17.csv,True
+Mostafa,Left,Unknown Gesture,Unknown Gesture,0.6478744149208069,Mostafa-Unknown_Left_18.csv,True
+Mostafa,Left,Unknown Gesture,Stop-Talking,0.8845327496528625,Mostafa-Unknown_Left_19.csv,False
+Mostafa,Left,Unknown Gesture,Start-Talking,0.9958372116088867,Mostafa-Unknown_Left_2.csv,False
+Mostafa,Left,Unknown Gesture,Hello,0.8751927614212036,Mostafa-Unknown_Left_20.csv,False
+Mostafa,Left,Unknown Gesture,Unknown Gesture,0.5521906018257141,Mostafa-Unknown_Left_21.csv,True
+Mostafa,Left,Unknown Gesture,Stop-Talking,0.8771580457687378,Mostafa-Unknown_Left_22.csv,False
+Mostafa,Left,Unknown Gesture,Start-Talking,0.99941086769104,Mostafa-Unknown_Left_23.csv,False
+Mostafa,Left,Unknown Gesture,Unknown Gesture,0.540570855140686,Mostafa-Unknown_Left_24.csv,True
+Mostafa,Left,Unknown Gesture,Hello,0.9998255372047424,Mostafa-Unknown_Left_25.csv,False
+Mostafa,Left,Unknown Gesture,Unknown Gesture,0.6192108988761902,Mostafa-Unknown_Left_26.csv,True
+Mostafa,Left,Unknown Gesture,Stop-Talking,0.8473724126815796,Mostafa-Unknown_Left_27.csv,False
+Mostafa,Left,Unknown Gesture,Start-Talking,0.9088035821914673,Mostafa-Unknown_Left_28.csv,False
+Mostafa,Left,Unknown Gesture,Start-Talking,0.7747997641563416,Mostafa-Unknown_Left_29.csv,False
+Mostafa,Left,Unknown Gesture,Unknown Gesture,0.671334445476532,Mostafa-Unknown_Left_3.csv,True
+Mostafa,Left,Unknown Gesture,Unknown Gesture,0.6483418941497803,Mostafa-Unknown_Left_30.csv,True
+Mostafa,Left,Unknown Gesture,Start-Talking,0.8838620185852051,Mostafa-Unknown_Left_31.csv,False
+Mostafa,Left,Unknown Gesture,Unknown Gesture,0.5693987607955933,Mostafa-Unknown_Left_32.csv,True
+Mostafa,Left,Unknown Gesture,Start-Talking,0.9992468357086182,Mostafa-Unknown_Left_33.csv,False
+Mostafa,Left,Unknown Gesture,Unknown Gesture,0.4512656629085541,Mostafa-Unknown_Left_34.csv,True
+Mostafa,Left,Unknown Gesture,Start-Talking,0.8455424308776855,Mostafa-Unknown_Left_35.csv,False
+Mostafa,Left,Unknown Gesture,Start-Talking,0.9871026873588562,Mostafa-Unknown_Left_36.csv,False
+Mostafa,Left,Unknown Gesture,Unknown Gesture,0.4837489426136017,Mostafa-Unknown_Left_37.csv,True
+Mostafa,Left,Unknown Gesture,Start-Talking,0.9662758708000183,Mostafa-Unknown_Left_38.csv,False
+Mostafa,Left,Unknown Gesture,Unknown Gesture,0.49962732195854187,Mostafa-Unknown_Left_39.csv,True
+Mostafa,Left,Unknown Gesture,Hello,0.9997771382331848,Mostafa-Unknown_Left_4.csv,False
+Mostafa,Left,Unknown Gesture,Start-Talking,0.9962798953056335,Mostafa-Unknown_Left_40.csv,False
+Mostafa,Left,Unknown Gesture,Start-Talking,0.9904364943504333,Mostafa-Unknown_Left_41.csv,False
+Mostafa,Left,Unknown Gesture,Start-Talking,0.9410740733146667,Mostafa-Unknown_Left_42.csv,False
+Mostafa,Left,Unknown Gesture,Unknown Gesture,0.6170327663421631,Mostafa-Unknown_Left_43.csv,True
+Mostafa,Left,Unknown Gesture,Start-Talking,0.984120786190033,Mostafa-Unknown_Left_44.csv,False
+Mostafa,Left,Unknown Gesture,Unknown Gesture,0.4930552840232849,Mostafa-Unknown_Left_45.csv,True
+Mostafa,Left,Unknown Gesture,Hello,0.9937657117843628,Mostafa-Unknown_Left_46.csv,False
+Mostafa,Left,Unknown Gesture,Hello,0.9771131277084351,Mostafa-Unknown_Left_47.csv,False
+Mostafa,Left,Unknown Gesture,Start-Talking,0.9964783787727356,Mostafa-Unknown_Left_48.csv,False
+Mostafa,Left,Unknown Gesture,Unknown Gesture,0.5968365669250488,Mostafa-Unknown_Left_49.csv,True
+Mostafa,Left,Unknown Gesture,Hello,0.9999675750732422,Mostafa-Unknown_Left_5.csv,False
+Mostafa,Left,Unknown Gesture,Hello,0.9998443126678467,Mostafa-Unknown_Left_50.csv,False
+Mostafa,Left,Unknown Gesture,Start-Talking,0.9838197827339172,Mostafa-Unknown_Left_6.csv,False
+Mostafa,Left,Unknown Gesture,Hello,0.9908265471458435,Mostafa-Unknown_Left_7.csv,False
+Mostafa,Left,Unknown Gesture,Unknown Gesture,0.4200400412082672,Mostafa-Unknown_Left_8.csv,True
+Mostafa,Left,Unknown Gesture,Start-Talking,0.956927478313446,Mostafa-Unknown_Left_9.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9999985694885254,Mostafa-Unknown_Right_1.csv,False
+Mostafa,Right,Unknown Gesture,How-Are-You,0.8745572566986084,Mostafa-Unknown_Right_10.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9999990463256836,Mostafa-Unknown_Right_11.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9998371601104736,Mostafa-Unknown_Right_12.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9999986886978149,Mostafa-Unknown_Right_13.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9999998807907104,Mostafa-Unknown_Right_14.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.7955107092857361,Mostafa-Unknown_Right_15.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9998455047607422,Mostafa-Unknown_Right_16.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9999988079071045,Mostafa-Unknown_Right_17.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9999929666519165,Mostafa-Unknown_Right_18.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9999995231628418,Mostafa-Unknown_Right_19.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9999920129776001,Mostafa-Unknown_Right_2.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9983460903167725,Mostafa-Unknown_Right_20.csv,False
+Mostafa,Right,Unknown Gesture,Hello,1.0,Mostafa-Unknown_Right_21.csv,False
+Mostafa,Right,Unknown Gesture,Hello,1.0,Mostafa-Unknown_Right_22.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9999996423721313,Mostafa-Unknown_Right_23.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9999903440475464,Mostafa-Unknown_Right_24.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.7107136249542236,Mostafa-Unknown_Right_25.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9999988079071045,Mostafa-Unknown_Right_26.csv,False
+Mostafa,Right,Unknown Gesture,Hello,1.0,Mostafa-Unknown_Right_27.csv,False
+Mostafa,Right,Unknown Gesture,Hello,1.0,Mostafa-Unknown_Right_28.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9997275471687317,Mostafa-Unknown_Right_29.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.997122585773468,Mostafa-Unknown_Right_3.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.8919902443885803,Mostafa-Unknown_Right_30.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9973614811897278,Mostafa-Unknown_Right_31.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9999995231628418,Mostafa-Unknown_Right_32.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9996365308761597,Mostafa-Unknown_Right_33.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9999998807907104,Mostafa-Unknown_Right_34.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9999997615814209,Mostafa-Unknown_Right_35.csv,False
+Mostafa,Right,Unknown Gesture,How-Are-You,0.9750871062278748,Mostafa-Unknown_Right_36.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9874024391174316,Mostafa-Unknown_Right_37.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9999996423721313,Mostafa-Unknown_Right_38.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9999998807907104,Mostafa-Unknown_Right_39.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9999908208847046,Mostafa-Unknown_Right_4.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9999959468841553,Mostafa-Unknown_Right_40.csv,False
+Mostafa,Right,Unknown Gesture,Hello,1.0,Mostafa-Unknown_Right_41.csv,False
+Mostafa,Right,Unknown Gesture,Hello,1.0,Mostafa-Unknown_Right_42.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9999995231628418,Mostafa-Unknown_Right_43.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9999082088470459,Mostafa-Unknown_Right_44.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9988968372344971,Mostafa-Unknown_Right_45.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9999853372573853,Mostafa-Unknown_Right_46.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9999758005142212,Mostafa-Unknown_Right_47.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9999762773513794,Mostafa-Unknown_Right_48.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9999995231628418,Mostafa-Unknown_Right_49.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9999730587005615,Mostafa-Unknown_Right_5.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9999996423721313,Mostafa-Unknown_Right_50.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9999995231628418,Mostafa-Unknown_Right_6.csv,False
+Mostafa,Right,Unknown Gesture,Hello,1.0,Mostafa-Unknown_Right_7.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.9997112154960632,Mostafa-Unknown_Right_8.csv,False
+Mostafa,Right,Unknown Gesture,Hello,0.999976396560669,Mostafa-Unknown_Right_9.csv,False
 Mostafa,Left,Yes,Yes,0.9999651908874512,Mostafa-Yes_Left_2025-04-04_13-00-54.csv,True
 Mostafa,Left,Yes,Yes,0.9999682903289795,Mostafa-Yes_Left_2025-04-04_13-00-55.csv,True
 Mostafa,Left,Yes,Yes,0.9999791383743286,Mostafa-Yes_Left_2025-04-04_13-00-56.csv,True
@@ -347,26 +507,106 @@ Mykola,Right,Thank-You,Thank-You,0.9999967813491821,Mykola-Thank-You_Right_2025-
 Mykola,Right,Thank-You,Thank-You,0.9999998807907104,Mykola-Thank-You_Right_2025-04-04_13-57-33.csv,True
 Mykola,Right,Thank-You,Thank-You,0.9999995231628418,Mykola-Thank-You_Right_2025-04-04_13-57-34.csv,True
 Mykola,Right,Thank-You,Thank-You,0.9999996423721313,Mykola-Thank-You_Right_2025-04-04_13-57-35.csv,True
-Mykola,Left,Unknown Gesture,Hello,0.7485328912734985,Unknown_Left_1.csv,False
-Mykola,Left,Unknown Gesture,Hello,0.9946509003639221,Unknown_Left_10.csv,False
-Mykola,Left,Unknown Gesture,Unknown Gesture,0.5574391484260559,Unknown_Left_2.csv,True
-Mykola,Left,Unknown Gesture,Stop-Talking,0.7595430016517639,Unknown_Left_3.csv,False
-Mykola,Left,Unknown Gesture,Start-Talking,0.9900839328765869,Unknown_Left_4.csv,False
-Mykola,Left,Unknown Gesture,Stop-Talking,0.85768723487854,Unknown_Left_5.csv,False
-Mykola,Left,Unknown Gesture,Start-Talking,0.8944625854492188,Unknown_Left_6.csv,False
-Mykola,Left,Unknown Gesture,Start-Talking,0.9654130339622498,Unknown_Left_7.csv,False
-Mykola,Left,Unknown Gesture,Unknown Gesture,0.4685550332069397,Unknown_Left_8.csv,True
-Mykola,Left,Unknown Gesture,Start-Talking,0.9543179273605347,Unknown_Left_9.csv,False
-Mykola,Right,Unknown Gesture,Hello,0.9999990463256836,Unknown_Right_1.csv,False
-Mykola,Right,Unknown Gesture,Hello,0.9999980926513672,Unknown_Right_10.csv,False
-Mykola,Right,Unknown Gesture,Hello,0.9999783039093018,Unknown_Right_2.csv,False
-Mykola,Right,Unknown Gesture,Unknown Gesture,0.48533540964126587,Unknown_Right_3.csv,True
-Mykola,Right,Unknown Gesture,Hello,0.756949782371521,Unknown_Right_4.csv,False
-Mykola,Right,Unknown Gesture,Hello,1.0,Unknown_Right_5.csv,False
-Mykola,Right,Unknown Gesture,Hello,1.0,Unknown_Right_6.csv,False
-Mykola,Right,Unknown Gesture,Hello,0.9999997615814209,Unknown_Right_7.csv,False
-Mykola,Right,Unknown Gesture,Hello,0.9999998807907104,Unknown_Right_8.csv,False
-Mykola,Right,Unknown Gesture,Hello,0.9999997615814209,Unknown_Right_9.csv,False
+Mykola,Left,Unknown Gesture,Start-Talking,0.9827747941017151,Mykola-Unknown_Left_1.csv,False
+Mykola,Left,Unknown Gesture,Start-Talking,0.9779562950134277,Mykola-Unknown_Left_10.csv,False
+Mykola,Left,Unknown Gesture,Start-Talking,0.9741612672805786,Mykola-Unknown_Left_11.csv,False
+Mykola,Left,Unknown Gesture,Start-Talking,0.8533368706703186,Mykola-Unknown_Left_12.csv,False
+Mykola,Left,Unknown Gesture,Unknown Gesture,0.6959296464920044,Mykola-Unknown_Left_13.csv,True
+Mykola,Left,Unknown Gesture,Hello,0.9769253730773926,Mykola-Unknown_Left_14.csv,False
+Mykola,Left,Unknown Gesture,Unknown Gesture,0.6060956716537476,Mykola-Unknown_Left_15.csv,True
+Mykola,Left,Unknown Gesture,Start-Talking,0.9141256809234619,Mykola-Unknown_Left_16.csv,False
+Mykola,Left,Unknown Gesture,How-Are-You,0.9494802951812744,Mykola-Unknown_Left_17.csv,False
+Mykola,Left,Unknown Gesture,Yes,0.8903294205665588,Mykola-Unknown_Left_18.csv,False
+Mykola,Left,Unknown Gesture,Start-Talking,0.9206958413124084,Mykola-Unknown_Left_19.csv,False
+Mykola,Left,Unknown Gesture,Unknown Gesture,0.4028255343437195,Mykola-Unknown_Left_2.csv,True
+Mykola,Left,Unknown Gesture,Start-Talking,0.9633546471595764,Mykola-Unknown_Left_20.csv,False
+Mykola,Left,Unknown Gesture,Start-Talking,0.986793041229248,Mykola-Unknown_Left_21.csv,False
+Mykola,Left,Unknown Gesture,Start-Talking,0.9899798631668091,Mykola-Unknown_Left_22.csv,False
+Mykola,Left,Unknown Gesture,Hello,0.7962206602096558,Mykola-Unknown_Left_23.csv,False
+Mykola,Left,Unknown Gesture,Hello,0.9017055034637451,Mykola-Unknown_Left_24.csv,False
+Mykola,Left,Unknown Gesture,Stop-Talking,0.7213656306266785,Mykola-Unknown_Left_25.csv,False
+Mykola,Left,Unknown Gesture,Unknown Gesture,0.6457119584083557,Mykola-Unknown_Left_26.csv,True
+Mykola,Left,Unknown Gesture,Hello,0.7415050864219666,Mykola-Unknown_Left_27.csv,False
+Mykola,Left,Unknown Gesture,Start-Talking,0.9816152453422546,Mykola-Unknown_Left_28.csv,False
+Mykola,Left,Unknown Gesture,Start-Talking,0.8930148482322693,Mykola-Unknown_Left_29.csv,False
+Mykola,Left,Unknown Gesture,Start-Talking,0.9948732256889343,Mykola-Unknown_Left_3.csv,False
+Mykola,Left,Unknown Gesture,Stop-Talking,0.8308098912239075,Mykola-Unknown_Left_30.csv,False
+Mykola,Left,Unknown Gesture,Unknown Gesture,0.6102347373962402,Mykola-Unknown_Left_31.csv,True
+Mykola,Left,Unknown Gesture,Start-Talking,0.7370645403862,Mykola-Unknown_Left_32.csv,False
+Mykola,Left,Unknown Gesture,Unknown Gesture,0.6134688258171082,Mykola-Unknown_Left_33.csv,True
+Mykola,Left,Unknown Gesture,Start-Talking,0.7398082613945007,Mykola-Unknown_Left_34.csv,False
+Mykola,Left,Unknown Gesture,Unknown Gesture,0.6799009442329407,Mykola-Unknown_Left_35.csv,True
+Mykola,Left,Unknown Gesture,Hello,0.7567339539527893,Mykola-Unknown_Left_36.csv,False
+Mykola,Left,Unknown Gesture,Start-Talking,0.9687787890434265,Mykola-Unknown_Left_37.csv,False
+Mykola,Left,Unknown Gesture,Hello,0.8754229545593262,Mykola-Unknown_Left_38.csv,False
+Mykola,Left,Unknown Gesture,Unknown Gesture,0.5197282433509827,Mykola-Unknown_Left_39.csv,True
+Mykola,Left,Unknown Gesture,Stop-Talking,0.9865220189094543,Mykola-Unknown_Left_4.csv,False
+Mykola,Left,Unknown Gesture,Hello,0.9998970031738281,Mykola-Unknown_Left_40.csv,False
+Mykola,Left,Unknown Gesture,Hello,0.9998173117637634,Mykola-Unknown_Left_41.csv,False
+Mykola,Left,Unknown Gesture,Start-Talking,0.9450257420539856,Mykola-Unknown_Left_42.csv,False
+Mykola,Left,Unknown Gesture,Unknown Gesture,0.6873492002487183,Mykola-Unknown_Left_43.csv,True
+Mykola,Left,Unknown Gesture,Unknown Gesture,0.6239053010940552,Mykola-Unknown_Left_44.csv,True
+Mykola,Left,Unknown Gesture,Hello,0.829807698726654,Mykola-Unknown_Left_45.csv,False
+Mykola,Left,Unknown Gesture,Yes,0.8833482265472412,Mykola-Unknown_Left_46.csv,False
+Mykola,Left,Unknown Gesture,Start-Talking,0.9719557762145996,Mykola-Unknown_Left_47.csv,False
+Mykola,Left,Unknown Gesture,Unknown Gesture,0.6568890810012817,Mykola-Unknown_Left_48.csv,True
+Mykola,Left,Unknown Gesture,Hello,0.9039580821990967,Mykola-Unknown_Left_49.csv,False
+Mykola,Left,Unknown Gesture,Hello,0.8548920750617981,Mykola-Unknown_Left_5.csv,False
+Mykola,Left,Unknown Gesture,Stop-Talking,0.7151288390159607,Mykola-Unknown_Left_50.csv,False
+Mykola,Left,Unknown Gesture,Start-Talking,0.9113377332687378,Mykola-Unknown_Left_6.csv,False
+Mykola,Left,Unknown Gesture,Hello,0.9776831865310669,Mykola-Unknown_Left_7.csv,False
+Mykola,Left,Unknown Gesture,Start-Talking,0.9911507368087769,Mykola-Unknown_Left_8.csv,False
+Mykola,Left,Unknown Gesture,Start-Talking,0.9814944267272949,Mykola-Unknown_Left_9.csv,False
+Mykola,Right,Unknown Gesture,Unknown Gesture,0.6053902506828308,Mykola-Unknown_Right_1.csv,True
+Mykola,Right,Unknown Gesture,Hello,0.9810971021652222,Mykola-Unknown_Right_10.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9997797608375549,Mykola-Unknown_Right_11.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9973147511482239,Mykola-Unknown_Right_12.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9999958276748657,Mykola-Unknown_Right_13.csv,False
+Mykola,Right,Unknown Gesture,Hello,1.0,Mykola-Unknown_Right_14.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9999988079071045,Mykola-Unknown_Right_15.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9989185333251953,Mykola-Unknown_Right_16.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9999758005142212,Mykola-Unknown_Right_17.csv,False
+Mykola,Right,Unknown Gesture,Hello,1.0,Mykola-Unknown_Right_18.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9401781558990479,Mykola-Unknown_Right_19.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9999880790710449,Mykola-Unknown_Right_2.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9307096600532532,Mykola-Unknown_Right_20.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9999978542327881,Mykola-Unknown_Right_21.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9999998807907104,Mykola-Unknown_Right_22.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9998635053634644,Mykola-Unknown_Right_23.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9999773502349854,Mykola-Unknown_Right_24.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9998701810836792,Mykola-Unknown_Right_25.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9999852180480957,Mykola-Unknown_Right_26.csv,False
+Mykola,Right,Unknown Gesture,Hello,1.0,Mykola-Unknown_Right_27.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9997031092643738,Mykola-Unknown_Right_28.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9843718409538269,Mykola-Unknown_Right_29.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9999994039535522,Mykola-Unknown_Right_3.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9999994039535522,Mykola-Unknown_Right_30.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9999059438705444,Mykola-Unknown_Right_31.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9999998807907104,Mykola-Unknown_Right_32.csv,False
+Mykola,Right,Unknown Gesture,Hello,1.0,Mykola-Unknown_Right_33.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9999998807907104,Mykola-Unknown_Right_34.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9999667406082153,Mykola-Unknown_Right_35.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9999996423721313,Mykola-Unknown_Right_36.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9999514818191528,Mykola-Unknown_Right_37.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9999964237213135,Mykola-Unknown_Right_38.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.999997615814209,Mykola-Unknown_Right_39.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9997126460075378,Mykola-Unknown_Right_4.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9998924732208252,Mykola-Unknown_Right_40.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9999991655349731,Mykola-Unknown_Right_41.csv,False
+Mykola,Right,Unknown Gesture,Hello,1.0,Mykola-Unknown_Right_42.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9999998807907104,Mykola-Unknown_Right_43.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9999781847000122,Mykola-Unknown_Right_44.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9999991655349731,Mykola-Unknown_Right_45.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9999755620956421,Mykola-Unknown_Right_46.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.999742329120636,Mykola-Unknown_Right_47.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9999986886978149,Mykola-Unknown_Right_48.csv,False
+Mykola,Right,Unknown Gesture,Hello,1.0,Mykola-Unknown_Right_49.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9999946355819702,Mykola-Unknown_Right_5.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9999911785125732,Mykola-Unknown_Right_50.csv,False
+Mykola,Right,Unknown Gesture,How-Are-You,0.7112687230110168,Mykola-Unknown_Right_6.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9999998807907104,Mykola-Unknown_Right_7.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9999998807907104,Mykola-Unknown_Right_8.csv,False
+Mykola,Right,Unknown Gesture,Hello,0.9997355341911316,Mykola-Unknown_Right_9.csv,False
 Mykola,Left,Yes,How-Are-You,0.8575076460838318,Mykola-Yes_Left_2025-04-04_13-55-26.csv,False
 Mykola,Left,Yes,How-Are-You,0.8981685042381287,Mykola-Yes_Left_2025-04-04_13-55-27.csv,False
 Mykola,Left,Yes,How-Are-You,0.7987291812896729,Mykola-Yes_Left_2025-04-04_13-55-28.csv,False
@@ -462,26 +702,106 @@ Pouya,Right,Thank-You,Thank-You,0.9903400540351868,Pouya-Thank-You_Right_2025-04
 Pouya,Right,Thank-You,Thank-You,0.9899662733078003,Pouya-Thank-You_Right_2025-04-04_13-45-09.csv,True
 Pouya,Right,Thank-You,Thank-You,0.9865264296531677,Pouya-Thank-You_Right_2025-04-04_13-45-10.csv,True
 Pouya,Right,Thank-You,Thank-You,0.985575795173645,Pouya-Thank-You_Right_2025-04-04_13-45-11.csv,True
-Pouya,Left,Unknown Gesture,Hello,0.999188244342804,Unknown_Left_1.csv,False
-Pouya,Left,Unknown Gesture,Unknown Gesture,0.6047906875610352,Unknown_Left_10.csv,True
-Pouya,Left,Unknown Gesture,Hello,0.8096417784690857,Unknown_Left_2.csv,False
-Pouya,Left,Unknown Gesture,Start-Talking,0.9919750094413757,Unknown_Left_3.csv,False
-Pouya,Left,Unknown Gesture,Start-Talking,0.7583184242248535,Unknown_Left_4.csv,False
-Pouya,Left,Unknown Gesture,Start-Talking,0.997860848903656,Unknown_Left_5.csv,False
-Pouya,Left,Unknown Gesture,Hello,0.9921144247055054,Unknown_Left_6.csv,False
-Pouya,Left,Unknown Gesture,Unknown Gesture,0.5454387664794922,Unknown_Left_7.csv,True
-Pouya,Left,Unknown Gesture,Hello,0.9987062215805054,Unknown_Left_8.csv,False
-Pouya,Left,Unknown Gesture,Stop-Talking,0.7249786853790283,Unknown_Left_9.csv,False
-Pouya,Right,Unknown Gesture,Hello,0.9999730587005615,Unknown_Right_1.csv,False
-Pouya,Right,Unknown Gesture,Hello,1.0,Unknown_Right_10.csv,False
-Pouya,Right,Unknown Gesture,Hello,0.9999988079071045,Unknown_Right_2.csv,False
-Pouya,Right,Unknown Gesture,Hello,0.9999731779098511,Unknown_Right_3.csv,False
-Pouya,Right,Unknown Gesture,Hello,0.9999994039535522,Unknown_Right_4.csv,False
-Pouya,Right,Unknown Gesture,Hello,0.9994407296180725,Unknown_Right_5.csv,False
-Pouya,Right,Unknown Gesture,Hello,0.9992689490318298,Unknown_Right_6.csv,False
-Pouya,Right,Unknown Gesture,Hello,0.9999837875366211,Unknown_Right_7.csv,False
-Pouya,Right,Unknown Gesture,Hello,0.9999998807907104,Unknown_Right_8.csv,False
-Pouya,Right,Unknown Gesture,Hello,0.9998241066932678,Unknown_Right_9.csv,False
+Pouya,Left,Unknown Gesture,Stop-Talking,0.8573004007339478,Pouya-Unknown_Left_1.csv,False
+Pouya,Left,Unknown Gesture,Unknown Gesture,0.6193185448646545,Pouya-Unknown_Left_10.csv,True
+Pouya,Left,Unknown Gesture,Unknown Gesture,0.6149067878723145,Pouya-Unknown_Left_11.csv,True
+Pouya,Left,Unknown Gesture,Unknown Gesture,0.5083047747612,Pouya-Unknown_Left_12.csv,True
+Pouya,Left,Unknown Gesture,Hello,0.9463990926742554,Pouya-Unknown_Left_13.csv,False
+Pouya,Left,Unknown Gesture,Unknown Gesture,0.5326122641563416,Pouya-Unknown_Left_14.csv,True
+Pouya,Left,Unknown Gesture,Unknown Gesture,0.4204205870628357,Pouya-Unknown_Left_15.csv,True
+Pouya,Left,Unknown Gesture,Start-Talking,0.7219637632369995,Pouya-Unknown_Left_16.csv,False
+Pouya,Left,Unknown Gesture,Start-Talking,0.9621180295944214,Pouya-Unknown_Left_17.csv,False
+Pouya,Left,Unknown Gesture,Hello,0.856143057346344,Pouya-Unknown_Left_18.csv,False
+Pouya,Left,Unknown Gesture,Start-Talking,0.9962536096572876,Pouya-Unknown_Left_19.csv,False
+Pouya,Left,Unknown Gesture,Hello,0.7642096877098083,Pouya-Unknown_Left_2.csv,False
+Pouya,Left,Unknown Gesture,Start-Talking,0.9674423933029175,Pouya-Unknown_Left_20.csv,False
+Pouya,Left,Unknown Gesture,Start-Talking,0.8961939811706543,Pouya-Unknown_Left_21.csv,False
+Pouya,Left,Unknown Gesture,Start-Talking,0.9867021441459656,Pouya-Unknown_Left_22.csv,False
+Pouya,Left,Unknown Gesture,Start-Talking,0.9961358904838562,Pouya-Unknown_Left_23.csv,False
+Pouya,Left,Unknown Gesture,Unknown Gesture,0.5842577815055847,Pouya-Unknown_Left_24.csv,True
+Pouya,Left,Unknown Gesture,How-Are-You,0.8403785228729248,Pouya-Unknown_Left_25.csv,False
+Pouya,Left,Unknown Gesture,Start-Talking,0.9794265031814575,Pouya-Unknown_Left_26.csv,False
+Pouya,Left,Unknown Gesture,Hello,0.8286242485046387,Pouya-Unknown_Left_27.csv,False
+Pouya,Left,Unknown Gesture,Hello,0.9871506690979004,Pouya-Unknown_Left_28.csv,False
+Pouya,Left,Unknown Gesture,Hello,0.985684871673584,Pouya-Unknown_Left_29.csv,False
+Pouya,Left,Unknown Gesture,Hello,0.8658801317214966,Pouya-Unknown_Left_3.csv,False
+Pouya,Left,Unknown Gesture,Start-Talking,0.7457075119018555,Pouya-Unknown_Left_30.csv,False
+Pouya,Left,Unknown Gesture,Unknown Gesture,0.5555980801582336,Pouya-Unknown_Left_31.csv,True
+Pouya,Left,Unknown Gesture,Unknown Gesture,0.3635256886482239,Pouya-Unknown_Left_32.csv,True
+Pouya,Left,Unknown Gesture,Start-Talking,0.7149738073348999,Pouya-Unknown_Left_33.csv,False
+Pouya,Left,Unknown Gesture,Start-Talking,0.9899711608886719,Pouya-Unknown_Left_34.csv,False
+Pouya,Left,Unknown Gesture,Hello,0.9290196299552917,Pouya-Unknown_Left_35.csv,False
+Pouya,Left,Unknown Gesture,Unknown Gesture,0.4423518478870392,Pouya-Unknown_Left_36.csv,True
+Pouya,Left,Unknown Gesture,Unknown Gesture,0.6126877069473267,Pouya-Unknown_Left_37.csv,True
+Pouya,Left,Unknown Gesture,Hello,0.999403715133667,Pouya-Unknown_Left_38.csv,False
+Pouya,Left,Unknown Gesture,Start-Talking,0.9934112429618835,Pouya-Unknown_Left_39.csv,False
+Pouya,Left,Unknown Gesture,Hello,0.764046311378479,Pouya-Unknown_Left_4.csv,False
+Pouya,Left,Unknown Gesture,Start-Talking,0.8975829482078552,Pouya-Unknown_Left_40.csv,False
+Pouya,Left,Unknown Gesture,Unknown Gesture,0.45439979434013367,Pouya-Unknown_Left_41.csv,True
+Pouya,Left,Unknown Gesture,Start-Talking,0.9952576756477356,Pouya-Unknown_Left_42.csv,False
+Pouya,Left,Unknown Gesture,Hello,0.9920641779899597,Pouya-Unknown_Left_43.csv,False
+Pouya,Left,Unknown Gesture,Hello,0.7117209434509277,Pouya-Unknown_Left_44.csv,False
+Pouya,Left,Unknown Gesture,Hello,0.9888589382171631,Pouya-Unknown_Left_45.csv,False
+Pouya,Left,Unknown Gesture,Unknown Gesture,0.6563564538955688,Pouya-Unknown_Left_46.csv,True
+Pouya,Left,Unknown Gesture,Hello,0.9621585011482239,Pouya-Unknown_Left_47.csv,False
+Pouya,Left,Unknown Gesture,Start-Talking,0.9886049032211304,Pouya-Unknown_Left_48.csv,False
+Pouya,Left,Unknown Gesture,Start-Talking,0.9345464110374451,Pouya-Unknown_Left_49.csv,False
+Pouya,Left,Unknown Gesture,Hello,0.9973621964454651,Pouya-Unknown_Left_5.csv,False
+Pouya,Left,Unknown Gesture,Hello,0.8181228637695312,Pouya-Unknown_Left_50.csv,False
+Pouya,Left,Unknown Gesture,Start-Talking,0.9598861336708069,Pouya-Unknown_Left_6.csv,False
+Pouya,Left,Unknown Gesture,Start-Talking,0.855343759059906,Pouya-Unknown_Left_7.csv,False
+Pouya,Left,Unknown Gesture,Start-Talking,0.7648690342903137,Pouya-Unknown_Left_8.csv,False
+Pouya,Left,Unknown Gesture,Start-Talking,0.9730833172798157,Pouya-Unknown_Left_9.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.998916745185852,Pouya-Unknown_Right_1.csv,False
+Pouya,Right,Unknown Gesture,Hello,1.0,Pouya-Unknown_Right_10.csv,False
+Pouya,Right,Unknown Gesture,How-Are-You,0.7076424956321716,Pouya-Unknown_Right_11.csv,False
+Pouya,Right,Unknown Gesture,Hello,1.0,Pouya-Unknown_Right_12.csv,False
+Pouya,Right,Unknown Gesture,Hello,1.0,Pouya-Unknown_Right_13.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.9999861717224121,Pouya-Unknown_Right_14.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.9954673051834106,Pouya-Unknown_Right_15.csv,False
+Pouya,Right,Unknown Gesture,Hello,1.0,Pouya-Unknown_Right_16.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.9999994039535522,Pouya-Unknown_Right_17.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.9999995231628418,Pouya-Unknown_Right_18.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.9999274015426636,Pouya-Unknown_Right_19.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.7512990236282349,Pouya-Unknown_Right_2.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.9999997615814209,Pouya-Unknown_Right_20.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.9999738931655884,Pouya-Unknown_Right_21.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.9986391663551331,Pouya-Unknown_Right_22.csv,False
+Pouya,Right,Unknown Gesture,Hello,1.0,Pouya-Unknown_Right_23.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.989944577217102,Pouya-Unknown_Right_24.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.9999988079071045,Pouya-Unknown_Right_25.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.9780035018920898,Pouya-Unknown_Right_26.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.9999979734420776,Pouya-Unknown_Right_27.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.9999923706054688,Pouya-Unknown_Right_28.csv,False
+Pouya,Right,Unknown Gesture,Hello,1.0,Pouya-Unknown_Right_29.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.9999632835388184,Pouya-Unknown_Right_3.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.9999998807907104,Pouya-Unknown_Right_30.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.9991175532341003,Pouya-Unknown_Right_31.csv,False
+Pouya,Right,Unknown Gesture,Hello,1.0,Pouya-Unknown_Right_32.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.9998049139976501,Pouya-Unknown_Right_33.csv,False
+Pouya,Right,Unknown Gesture,Hello,1.0,Pouya-Unknown_Right_34.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.9999994039535522,Pouya-Unknown_Right_35.csv,False
+Pouya,Right,Unknown Gesture,Hello,1.0,Pouya-Unknown_Right_36.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.9999998807907104,Pouya-Unknown_Right_37.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.9999847412109375,Pouya-Unknown_Right_38.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.9999713897705078,Pouya-Unknown_Right_39.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.9999995231628418,Pouya-Unknown_Right_4.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.9999897480010986,Pouya-Unknown_Right_40.csv,False
+Pouya,Right,Unknown Gesture,Hello,1.0,Pouya-Unknown_Right_41.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.9998328685760498,Pouya-Unknown_Right_42.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.9999994039535522,Pouya-Unknown_Right_43.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.9999998807907104,Pouya-Unknown_Right_44.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.9999843835830688,Pouya-Unknown_Right_45.csv,False
+Pouya,Right,Unknown Gesture,Hello,1.0,Pouya-Unknown_Right_46.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.9999991655349731,Pouya-Unknown_Right_47.csv,False
+Pouya,Right,Unknown Gesture,Hello,1.0,Pouya-Unknown_Right_48.csv,False
+Pouya,Right,Unknown Gesture,Hello,1.0,Pouya-Unknown_Right_49.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.9999996423721313,Pouya-Unknown_Right_5.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.998699426651001,Pouya-Unknown_Right_50.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.9986711740493774,Pouya-Unknown_Right_6.csv,False
+Pouya,Right,Unknown Gesture,Hello,1.0,Pouya-Unknown_Right_7.csv,False
+Pouya,Right,Unknown Gesture,Hello,1.0,Pouya-Unknown_Right_8.csv,False
+Pouya,Right,Unknown Gesture,Hello,0.8398595452308655,Pouya-Unknown_Right_9.csv,False
 Pouya,Left,Yes,Yes,0.9999983310699463,Pouya-Yes_Left_2025-04-04_13-43-17.csv,True
 Pouya,Left,Yes,Yes,0.9999980926513672,Pouya-Yes_Left_2025-04-04_13-43-18.csv,True
 Pouya,Left,Yes,Yes,0.999997615814209,Pouya-Yes_Left_2025-04-04_13-43-19.csv,True
