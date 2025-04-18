@@ -71,6 +71,8 @@ def evaluate_participants():
             # Extract gesture name from the folder name (e.g., "Dan-Goodbye" -> "Goodbye")
             try:
                 _, gesture = gesture_folder.split("-", 1)
+                if gesture == "Unknown":
+                    gesture = "Unknown Gesture"
             except ValueError:
                 print(f"Skipping folder {gesture_folder}: Unable to extract gesture name.")
                 continue
@@ -109,11 +111,11 @@ def evaluate_participants():
                                 "Participant": participant_name,
                                 "Hand": hand,
                                 "Expected Gesture": gesture,
-                                "Predicted Gesture": hand_result.get("classification", "Unknown"),
+                                "Predicted Gesture": hand_result.get("classification", "Unknown Gesture"),
                                 "Confidence": hand_result.get("confidence", 0.0),
                                 "File": file_name,
                                 # Store if prediction was correct
-                                "Correct": hand_result.get("classification", "Unknown") == gesture
+                                "Correct": hand_result.get("classification", "Unknown Gesture") == gesture
                             }
                             
                             results.append(clean_result)

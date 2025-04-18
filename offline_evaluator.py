@@ -65,7 +65,7 @@ def classify_hand_data(hand_data, model, confidence_threshold=0.5):
     if confidence >= confidence_threshold:
         classification = GESTURE_LABELS[predicted_index]
     else:
-        classification = "Unknown"
+        classification = "Unknown Gesture"
     
     return {
         "classification": classification,

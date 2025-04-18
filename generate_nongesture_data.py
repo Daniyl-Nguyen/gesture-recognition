@@ -36,14 +36,14 @@ def generate_nongesture_csv(output_dir, hand_type, file_number, min_frames=50, m
 
         current_timestamp = 0.0 # Use the same timestamp for all joints in this frame
         for joint_name in joint_names: # Iterate through joints for the current frame
-            # Generate random values within approximate observed ranges (with buffer)
-            pos_x = random.uniform(-0.1, 0.1)
-            pos_y = random.uniform(-0.2, -0.1)
-            pos_z = random.uniform(0.15, 0.40)
-            rot_x = random.uniform(0.0, 0.8)
-            rot_y = random.uniform(-0.6, 0.5)
-            rot_z = random.uniform(-0.7, -0.1)
-            rot_w = random.uniform(0.4, 0.8)
+            # Generate random values using the wider observed ranges
+            pos_x = random.uniform(-0.320, 0.141)
+            pos_y = random.uniform(-0.359, 0.109)
+            pos_z = random.uniform(0.179, 0.463)
+            rot_x = random.uniform(-0.748, 0.955)
+            rot_y = random.uniform(-0.832, 0.790)
+            rot_z = random.uniform(-0.822, 0.862)
+            rot_w = random.uniform(-0.771, 0.992) # Corrected min value based on samples
 
             row = [current_timestamp, hand_type, joint_name,
                     pos_x, pos_y, pos_z, rot_x, rot_y, rot_z, rot_w]
