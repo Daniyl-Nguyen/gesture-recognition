@@ -143,21 +143,26 @@ def evaluate_participants_with_threshold(left_hand_model, right_hand_model, conf
 def evaluate_all_thresholds():
     """
     Evaluate participant data with different confidence thresholds 
-    and plot accuracy against threshold.
+    and plot accuracy against threshold using anonymized participant names.
     """
     print("Loading pretrained models from train_model.py...")
     left_hand_model, right_hand_model = get_trained_models()
+
+    # Get unique participant names for anonymization
+    participant_names = sorted([p for p in os.listdir(PARTICIPANTS_DATA_PATH) if os.path.isdir(os.path.join(PARTICIPANTS_DATA_PATH, p))])
+    participant_map = {name: f"Participant {i+1}" for i, name in enumerate(participant_names)}
     
-    # Thresholds from 0.0 to 0.9, incrementing by 0.01
+    # Thresholds from 0.0 to 1.0, incrementing by 0.01
     thresholds = np.arange(0.0, 1.01, 0.01)
     all_results = []
     threshold_accuracies = []
     
-    # Also track per-participant accuracies at different thresholds
-    participant_accuracies = {}
+    # Track per-participant accuracies using anonymized names
+    participant_accuracies = {anon_name: [] for anon_name in participant_map.values()}
     
     for threshold in thresholds:
         print(f"\nEvaluating with confidence threshold: {threshold:.2f}")
+        # Pass the participant map to the evaluation function if needed, or apply mapping after
         results = evaluate_participants_with_threshold(left_hand_model, right_hand_model, threshold)
         all_results.extend(results)
         
@@ -168,33 +173,51 @@ def evaluate_all_thresholds():
             threshold_accuracies.append(accuracy)
             print(f"Accuracy at threshold {threshold:.2f}: {accuracy:.2f}%")
             
-            # Calculate per-participant accuracy
+            # Calculate per-participant accuracy and map to anonymized names
             participant_stats = threshold_df.groupby("Participant")["Correct"].mean() * 100
+            # Ensure all participants (even those with 0 accuracy) are represented for this threshold
+            current_threshold_participant_acc = {anon_name: 0.0 for anon_name in participant_map.values()}
             for participant, acc in participant_stats.items():
-                if participant not in participant_accuracies:
-                    participant_accuracies[participant] = []
-                participant_accuracies[participant].append(acc)
+                if participant in participant_map: # Check if participant is in our map
+                    anonymized_name = participant_map[participant]
+                    current_threshold_participant_acc[anonymized_name] = acc
+                else:
+                     print(f"Warning: Participant '{participant}' found in data but not in initial directory scan.")
+
+            # Append the accuracy for each anonymized participant for the current threshold
+            for anonymized_name, acc in current_threshold_participant_acc.items():
+                 participant_accuracies[anonymized_name].append(acc)
+
         else:
             threshold_accuracies.append(0)
+            # Append 0 accuracy for all participants if no results for this threshold
+            for anonymized_name in participant_accuracies:
+                participant_accuracies[anonymized_name].append(0)
             print(f"No valid results for threshold {threshold:.2f}")
     
-    # Save all results to CSV
+    # Save all results to CSV (original participant names are still in this raw data)
     results_df = pd.DataFrame(all_results)
     results_df.to_csv("evaluation_results_all_thresholds.csv", index=False)
     
     # Plot threshold vs accuracy
-    plt.figure(figsize=(10, 6))
-    plt.plot(thresholds, threshold_accuracies, marker='o', linestyle='-', label='Overall')
+    plt.figure(figsize=(12, 7)) # Adjusted size slightly
+    plt.plot(thresholds, threshold_accuracies, marker='o', linestyle='-', label='Overall', linewidth=2)
     
-    # Add per-participant accuracy lines
-    for participant, accuracies in participant_accuracies.items():
-        plt.plot(thresholds, accuracies, linestyle='--', label=participant)
+    # Add per-participant accuracy lines using anonymized names
+    for anonymized_name, accuracies in participant_accuracies.items():
+         # Ensure the length matches the number of thresholds
+        if len(accuracies) == len(thresholds):
+            plt.plot(thresholds, accuracies, linestyle='--', label=anonymized_name, alpha=0.7)
+        else:
+            print(f"Warning: Length mismatch for {anonymized_name}. Expected {len(thresholds)}, got {len(accuracies)}. Skipping plot line.")
+
     
     plt.xlabel('Confidence Threshold')
     plt.ylabel('Accuracy (%)')
     plt.title('Gesture Recognition Accuracy vs. Confidence Threshold')
     plt.grid(True)
-    plt.legend()
+    plt.legend(loc='best') # Changed legend location for potentially better placement
+    plt.tight_layout() # Adjust layout
     plt.savefig('threshold_vs_accuracy.png')
     plt.show()
     
@@ -204,15 +227,20 @@ def evaluate_all_thresholds():
     best_accuracy = threshold_accuracies[best_idx]
     print(f"\nBest threshold: {best_threshold:.2f} with accuracy: {best_accuracy:.2f}%")
     
-    # Save threshold vs accuracy data
+    # Save threshold vs accuracy data with anonymized participant columns
     threshold_data = pd.DataFrame({
         'Threshold': thresholds,
-        'Accuracy': threshold_accuracies
+        'Overall_Accuracy': threshold_accuracies # Renamed for clarity
     })
     
-    # Add per-participant accuracy columns
-    for participant, accuracies in participant_accuracies.items():
-        threshold_data[participant] = accuracies
+    # Add per-participant accuracy columns using anonymized names
+    for anonymized_name, accuracies in participant_accuracies.items():
+        # Ensure the length matches before adding the column
+        if len(accuracies) == len(thresholds):
+            threshold_data[anonymized_name] = accuracies
+        else:
+             print(f"Warning: Length mismatch for {anonymized_name}. Cannot add column to threshold_vs_accuracy.csv.")
+
         
     threshold_data.to_csv("threshold_vs_accuracy.csv", index=False)
     
