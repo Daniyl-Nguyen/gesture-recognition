@@ -9,7 +9,7 @@ import os
 # Define the threshold you want to generate the confusion matrix for
 TARGET_THRESHOLD = 0.7 
 # Define the input CSV file containing results for all thresholds
-CSV_PATH = "evaluation_results_all_thresholds.csv" 
+CSV_PATH = "evaluation_results_all_thresholds_downsampled_1_1.csv" 
 # --- End Configuration ---
 
 

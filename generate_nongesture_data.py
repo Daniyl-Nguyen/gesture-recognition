@@ -4,7 +4,7 @@ import os
 
 # --- Configuration ---
 PARTICIPANTS = ["Finch", "Mostafa", "Pouya", "Mykola"]
-SAMPLES_PER_PARTICIPANT_HAND = 50 # Number of files to generate per hand for each participant
+SAMPLES_PER_PARTICIPANT_HAND = 200 # Number of files to generate per hand for each participant
 BASE_OUTPUT_DIR = r"c:\Users\daniy\gesture-recognition\Participants" # Changed base directory
 # --- End Configuration ---
 
