@@ -73,7 +73,7 @@ def classify_hand_data(hand_data, model, confidence_threshold=0.5):
         "all_probabilities": {GESTURE_LABELS[i]: float(probs_np[i]) for i in range(len(GESTURE_LABELS))}
     }
 
-def evaluate_participants_with_threshold(left_hand_model, right_hand_model, confidence_threshold=0.5):
+def evaluate_participants_with_threshold(left_hand_model, right_hand_model, confidence_threshold):
     """
     Evaluate the data within the Participants directory using the specified confidence threshold.
     """

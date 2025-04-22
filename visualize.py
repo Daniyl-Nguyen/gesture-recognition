@@ -162,7 +162,8 @@ def parse_hand_csv(csv_file, timestamp=None):
 
 def plot_static_hand_on_ax(ax, coordinates, title):
     """
-    Plots a static 3D hand pose onto a given Matplotlib Axes object.
+    Plots a static 3D hand pose onto a given Matplotlib Axes object,
+    hiding the axes and grid lines.
 
     Parameters:
         ax: The Matplotlib 3D Axes object to plot on.
@@ -171,21 +172,7 @@ def plot_static_hand_on_ax(ax, coordinates, title):
     """
     ax.cla()
 
-    min_coords = np.min(coordinates, axis=0) - 0.05
-    max_coords = np.max(coordinates, axis=0) + 0.05
-    center = (min_coords + max_coords) / 2
-    max_range = np.max(max_coords - min_coords) * 0.6
-
-    ax.set_xlim(center[0] - max_range, center[0] + max_range)
-    ax.set_ylim(center[1] - max_range, center[1] + max_range)
-    ax.set_zlim(center[2] - max_range, center[2] + max_range)
-
-    ax.set_xlabel('X', fontsize=8)
-    ax.set_ylabel('Y', fontsize=8)
-    ax.set_zlabel('Z', fontsize=8)
-    ax.set_title(title, fontsize=10)
-    ax.tick_params(axis='both', which='major', labelsize=6)
-
+    # --- Plotting the hand (joints and bones) ---
     ax.scatter(coordinates[:, 0], coordinates[:, 1], coordinates[:, 2], c='blue', s=15, alpha=0.8, depthshade=True)
 
     for start_idx, end_idx in HAND_BONES:
@@ -194,34 +181,48 @@ def plot_static_hand_on_ax(ax, coordinates, title):
             ys = [coordinates[start_idx, 1], coordinates[end_idx, 1]]
             zs = [coordinates[start_idx, 2], coordinates[end_idx, 2]]
             ax.plot(xs, ys, zs, 'r-', linewidth=1.5)
+    # --- End Plotting ---
 
+    # --- Set limits to frame the hand ---
+    min_coords = np.min(coordinates, axis=0) - 0.05
+    max_coords = np.max(coordinates, axis=0) + 0.05
+    center = (min_coords + max_coords) / 2
+    max_range = np.max(max_coords - min_coords) * 0.6
+
+    ax.set_xlim(center[0] - max_range, center[0] + max_range)
+    ax.set_ylim(center[1] - max_range, center[1] + max_range)
+    ax.set_zlim(center[2] - max_range, center[2] + max_range)
+    # --- End Setting limits ---
+
+    # Set title
+    ax.set_title(title, fontsize=10)
+
+    # Set viewpoint
     ax.view_init(elev=25, azim=60)
+
+    # --- Hide axes and grid ---
+    ax.set_axis_off()
+    # --- End Hiding ---
 
 def main():
     dataset_path = "dataset"
     output_filename = "combined_gestures_left_hand_first_frame.png"
     left_subfolder_name = "Left" # Define the subfolder name
-    # Define the specific gestures to visualize
-    target_gestures = ["Goodbye", "Repeat-That", "Start-Talking", "Thank-You", "Tell-Me-More"]
 
     if not os.path.isdir(dataset_path):
         print(f"Error: Dataset directory '{dataset_path}' not found.")
         return
 
-    # Get all directories, but we will filter later
-    all_dirs = [d for d in os.listdir(dataset_path) if os.path.isdir(os.path.join(dataset_path, d))]
+    # Get all directories
+    all_dirs = sorted([d for d in os.listdir(dataset_path) if os.path.isdir(os.path.join(dataset_path, d))])
 
     all_gesture_coords = []
     gesture_names = []
 
-    print(f"Processing selected gestures in: {dataset_path}")
-    # Iterate through all directories but only process the target ones
-    for gesture_name in sorted(all_dirs):
-        # Check if the current gesture is one of the targets
-        if gesture_name not in target_gestures:
-            continue # Skip this directory if it's not in the target list
-
-        # --- Processing logic for target gestures ---
+    print(f"Processing all gestures in: {dataset_path}")
+    # Iterate through all directories found
+    for gesture_name in all_dirs:
+        # --- Processing logic for all gestures ---
         gesture_dir_path = os.path.join(dataset_path, gesture_name)
         left_folder_path = os.path.join(gesture_dir_path, left_subfolder_name) # Construct path to Left subfolder
 
@@ -251,40 +252,57 @@ def main():
 
 
     if not all_gesture_coords:
-        print("No valid gesture data could be processed from the target list. Exiting.")
+        print("No valid gesture data could be processed. Exiting.")
         return
 
     num_gestures = len(all_gesture_coords)
-    print(f"\nSuccessfully processed {num_gestures} target gestures.")
+    print(f"\nSuccessfully processed {num_gestures} gestures.")
 
-    # --- Adjust layout for horizontal row ---
-    num_rows = 1
-    num_cols = num_gestures
-    # Adjust figsize: width proportional to cols, height fixed (or proportional to rows=1)
+    # --- Adjust layout for 2x5 grid ---
+    num_rows = 2
+    num_cols = 5
+    # Adjust figsize for the 2x5 grid
     fig_width = num_cols * 3
-    fig_height = num_rows * 3.5 # Slightly taller for better 3D view if needed
+    fig_height = num_rows * 3.5
 
     fig, axes = plt.subplots(num_rows, num_cols, figsize=(fig_width, fig_height),
                              subplot_kw={'projection': '3d'})
     # --- End layout adjustment ---
 
 
-    # Ensure axes is always iterable, even if num_gestures is 1
-    if num_gestures == 1:
-        axes_flat = [axes]
+    # Ensure axes is always iterable and flatten it for easy indexing
+    if num_gestures == 0: # Should be caught earlier, but handle defensively
+         axes_flat = []
+    elif num_rows == 1 and num_cols == 1:
+         axes_flat = [axes]
+    elif num_rows == 1 or num_cols == 1:
+         axes_flat = axes # Already 1D
     else:
-        # axes is already 1D if num_rows is 1
-        axes_flat = axes
+         axes_flat = axes.flatten() # Flatten the 2D array
 
     print(f"Creating combined plot ({num_rows}x{num_cols} grid)...")
     for i in range(num_gestures):
-        ax = axes_flat[i]
-        coords = all_gesture_coords[i]
-        title = gesture_names[i]
-        plot_static_hand_on_ax(ax, coords, title)
+        # Check if index is within bounds of flattened axes
+        if i < len(axes_flat):
+            ax = axes_flat[i]
+            coords = all_gesture_coords[i]
+            title = gesture_names[i]
+            plot_static_hand_on_ax(ax, coords, title)
+        else:
+            print(f"Warning: More gestures ({num_gestures}) than available subplots ({len(axes_flat)}). Skipping gesture '{gesture_names[i]}'.")
+            break # Stop if we run out of subplots
 
-    # Adjust tight_layout rect if needed, maybe less top space required
-    plt.tight_layout(rect=[0, 0.03, 1, 0.93]) # Adjust top boundary if suptitle overlaps
+    # Hide unused subplots
+    for j in range(num_gestures, num_rows * num_cols):
+         if j < len(axes_flat):
+            axes_flat[j].set_visible(False)
+
+
+    fig.suptitle("First Frame of All Left Hand Gestures", fontsize=16)
+
+    # Adjust tight_layout rect and reduce padding between subplots
+    # w_pad: width padding, h_pad: height padding
+    plt.tight_layout(rect=[0, 0.03, 0.8, 0.8], w_pad=0, h_pad=0) # Adjust w_pad and h_pad as needed
 
     try:
         plt.savefig(output_filename, dpi=200)
